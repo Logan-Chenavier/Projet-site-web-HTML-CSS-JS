@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    
+    font-family: 'Poppins', sans-serif;
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    color: #333;
+    overflow-x: hidden;
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 60px;
+    z-index: 1;
+}
+
+
+
+h1,
+h2,
+h3 {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: lighter;
+}
+
+h1 {
+    color: #3666FF;
+}
+
+h2,
+h3 {
+    color: #FF7D17;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+.menu {
+    position: absolute;
+    cursor: pointer;
+}
+
+
+
+
+
+.link a:link,
+.link a:visited {
+    text-decoration: none;
+    color: black;
+    padding: 0 2px 0 2px;
+}
+
+.link:hover a:hover {
+    background-color: #FF8E36;
+    color: white;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.menu ul {
+    display: flex;
+}
+
+
+
+.lien_texte:link,
+.lien_texte:visited {
+    color: orange;
+}
+
+.logo {
+    margin-right: auto;
+    position: absolute;
+    transition: all 2s;
+}
+
+canvas {
+    position: fixed;
+}
+
+.blue {
+    color: #3666FF;
+    letter-spacing: 1px;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.orange {
+    color: #E57115;
+    letter-spacing: 1px;
+}
+
+header{
+    width:100%;
+    text-align:center;
+}
+
+.menu {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+   
+}
+@media only screen and (max-width: 1200px) {
+   
+    
+    .logo {
+       display: none;
+    }
+    
+}
+
+
+@media only screen and (min-width: 980px) {
+
+
+    #buttonMenu {
+        display: none;
+    }
+
+    .link {
+        margin: 10px;
+              
+        padding: 0px 3px 0px 3px;
+    }
+
+    .logo {
+        top: 0;
+        left: -2%;
+    }
+}
+
+
+
+@media only screen and (max-width: 980px) {
+
+   
+
+    .menu {
+        width: 100%;
+        margin-top: 0px;
+        text-align: center;
+    }
+
+
+        .menu ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgb(0, 0, 0, 0);
+            width: 100%;
+            background-color: #FAFAFA;
+        }
+
+
+        .menu li {
+            padding: 10px;
+            width: 100%;
+            align-content: center;
+        }
+
+    #menuItems {
+        display: none;
+    }
+
+        #menuItems.open {
+            display: flex;
+            height: 300px;
+        }
+
+    button {
+        width: 100%;
+        height: 40px;
+        visibility: visible;
+        letter-spacing: 4px;
+        background-color: #333;
+        border-color: #333;
+        color: white;
+    }
+
+    .logo {
+       display: none;
+    }
+}

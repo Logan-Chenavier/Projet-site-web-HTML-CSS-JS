@@ -1,0 +1,71 @@
+
+
+@-webkit-keyframes rotate {
+    100% {
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes rotate {
+    100% {
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+    }
+}
+
+.atome {
+    display: flex;
+   
+    -webkit-animation: rotate 60s linear infinite;
+    animation: rotate 60s linear infinite;
+    position: absolute;
+    top: calc(50% - 0px);
+    left: calc(50% - 0px);
+}
+
+.centre {
+    background-color: #3666FF;
+    width: 27.5px;
+    height: 27.5px;
+    border-radius: 50%;
+    position: relative;
+    top: calc(50% - 13.75px);
+    left: calc(50% - 13.75px);
+    opacity: 0.6;
+    
+}
+
+.anneau {
+    width: 50px;
+    height: 50px;
+    border: 1.75px solid #E57115;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: calc(50% - 25px);
+    left: calc(50% - 25px);
+    opacity: 0.55;
+}
+
+.anneau:nth-of-type(2) {
+    -webkit-transform: rotate(240deg) scaleX(4) scaleY(2);
+    transform: rotate(240deg) scaleX(4) scaleY(2);
+}
+
+.anneau:nth-of-type(3) {
+    -webkit-transform: rotate(360deg) scaleX(4) scaleY(2);
+    transform: rotate(360deg) scaleX(4) scaleY(2);
+    border-color: #BF5E11;
+}
+
+.anneau:nth-of-type(4) {
+    -webkit-transform: rotate(480deg) scaleX(4) scaleY(2);
+    transform: rotate(480deg) scaleX(4) scaleY(2);
+     border-color: #FF7D17;
+}
+
+.anneau:nth-of-type(5) {
+    -webkit-transform: rotate(600deg) scaleX(4) scaleY(2);
+    transform: rotate(600deg) scaleX(4) scaleY(2);
+}
+

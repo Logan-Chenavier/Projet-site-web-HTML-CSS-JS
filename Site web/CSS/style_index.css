@@ -1,0 +1,219 @@
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.atome-container {
+    width: 50%;
+}
+
+.presentation {
+    width: 50%;
+    position: absolute;
+    top: 40%;
+    left: 100px;
+}
+
+.p_espace {
+    margin-bottom: 100px;
+}
+
+.name_home {
+    font-size: 50px;
+    color: #E57115;
+    animation: apparition0 4s;
+    animation-fill-mode: forwards;
+    text-transform: inherit;
+}
+
+.texte {
+    font-size: 35px;
+    color: #333;
+    animation: apparition1 4s ease-out;
+    animation-fill-mode: forwards;
+    letter-spacing: 1px;
+}
+
+.information {
+    
+   
+    font-size: 20px;
+    color: #333;
+    letter-spacing: 1px;
+    animation: apparition2 4s ease-out;
+    animation-fill-mode: forwards;
+    position: absolute;
+    top:32%;
+    left: 64%;
+}
+
+
+
+.survole_menu {
+    
+    text-decoration: none;
+    color: #333;
+}
+
+.titre_blue {
+    color: #3666FF;
+}
+
+.span_information {
+    transition: 1s;
+    border: none;
+    background: linear-gradient(to top, orange, orange) no-repeat bottom left;
+    background-size: 0px 3px;
+}
+
+.bleu {
+    border: none;
+    background: linear-gradient(to top, #3666FF, #3666FF) no-repeat bottom left;
+    background-size: 0px 3px;
+}
+
+ f
+
+li:first-child span {
+    background-position: bottom center;
+}
+
+li:nth-child(even) span {
+    background-position: bottom center;
+}
+
+li:last-child span {
+    background-position: bottom center;
+}
+
+a:hover span {
+    background-size: 100% 3px;
+}
+
+@keyframes apparition0 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0.65;
+    }
+}
+
+@keyframes apparition1 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0.75;
+    }
+}
+
+@keyframes apparition2 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .atome-container { display: none;}
+    
+    .wrapper {
+    display: flex;
+        text-align: center;
+        align-items: center;
+        
+    }
+    
+    .presentation {
+         display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        position: inherit;
+        width: 100%;
+        
+    }
+    
+    .information {
+       position: inherit;
+        text-align: center;
+      
+    
+    }
+    
+    
+    .p_espace {
+        margin-top: 50px;
+        margin-bottom: 25px;
+    }
+}
+@media only screen and (max-width: 800px) {
+
+
+
+    .atome {
+        display: none;
+    }
+
+    .logo {
+        width: 220px;
+        height: 180px;
+        margin-top: 250px;
+        margin-bottom: 0px;
+        position: fixed;
+        
+    }
+
+    .wrapper {
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .presentation {
+        width: 100%;
+        text-align: center;
+        margin-top: 0px;
+        text-align-last: center;
+        
+    }
+
+   
+    .information {
+        font-size: 1em;
+        width: 100%;
+        margin-top: 30px;
+       
+        text-align: center;
+    }
+
+    .name {
+        font-size: 5em;
+    }
+
+    .texte {
+        font-size: 2em;
+    }
+    
+    .p_espace {
+        margin-top: 50px;
+        margin-bottom: 3%;
+    }
+    
+    
+}

@@ -1,0 +1,56 @@
+
+.texteobjectif {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    overflow-y:hidden;
+}
+
+.p1 {
+    width: 60%;
+    line-height: 28px;
+    text-align: justify;
+}
+
+.titre_notreObjectif {
+    margin-bottom: 30px;
+}
+
+
+.lineheight {
+    line-height: 1px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+@media only screen and (min-width: 960px) {
+
+
+    button {
+        display: none;
+    }
+    
+    
+
+}
+
+
+@media only screen and (max-width: 960px) {
+
+
+    .titre_notreObjectif {
+        
+        text-align: center;
+    }
+    
+    .p1 {
+        width: 90%;
+    }
+
+}
+
+

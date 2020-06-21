@@ -1,0 +1,114 @@
+.texte_fusion {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    margin-top: 40px;
+
+}
+
+.texte_fusion > p {
+    margin: 50px 0 30px 0;
+    width: 60%;
+    line-height: 28px;
+    text-align: justify;
+}
+
+
+
+
+.illustration {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.illustration1 {
+
+    height: 320px;
+    width: 450px;
+    background-image: url("../Image/fission.gif");
+    background-size: 100%;
+    background-color: black;
+    background-repeat: no-repeat;
+    border: solid 5px #FF7D17;
+
+}
+
+.illustration2 {
+
+    height: 320px;
+    width: 450px;
+    background-image: url("../Image/Fusion.gif");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-bottom: solid 5px;
+    border-top: solid 5px;
+    border-right: solid 5px;
+    border-color: #FF7D17;
+}
+
+.titre_normalize {
+    width: 60%;
+    text-align: center;
+
+}
+
+.to-top {
+    width: 48px;
+    height: 48px;
+
+    border-radius: 50%;
+    position: fixed;
+    bottom: 45px;
+    right: 45px;
+    padding: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+
+@media only screen and (max-width: 450px) {
+
+    .illustration1,
+    .illustration2 {
+        display: none;
+
+    }
+}
+
+@media only screen and (max-width: 980px) {
+
+
+    .illustration {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+    .illustration2 {
+        border-top: none;
+        border-left: solid 5px;
+        border-color: #FF7D17;
+    }
+
+    .titre_normalize {
+        width: 95%;
+        text-align: center;
+    }
+
+    .texte_fusion > p {
+
+        width: 90%;
+
+        text-align: justify;
+    }
+    .to-top img {
+        display: none;
+    }
+}

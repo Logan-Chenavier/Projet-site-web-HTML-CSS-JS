@@ -1,0 +1,54 @@
+
+
+.wrapper_presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.video {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+video {
+    margin-top: 25px;
+    width: 70%;
+}
+
+.presentation {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    
+}
+
+.texte_presentation {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.titre_presentation {
+    margin-top: 50px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 960px) {
+
+    .presentation {
+        width: 90%;
+    }
+
+
+
+}
